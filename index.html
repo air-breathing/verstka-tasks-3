@@ -14,8 +14,8 @@
             onkeyup="this.setAttribute('value', this.value)">
 
         <!-- Здесь применять вашу самую сильную магию -->
-        <table>
-            <caption></caption>
+        <table rules="none">
+            <caption>Табло аэропорта Шереметьево</caption>
             <thead>
                 <tr>
                     <th>Тип рейса</th>
@@ -32,7 +32,7 @@
             <tbody>
                 <tr>
                     <td>
-                        <img src="http://www.iconsearch.ru/uploads/icons/realistik-new/16x16/up.png">
+                        <img src="http://www.iconsearch.ru/uploads/icons/realistik-new/16x16/up.png" alt="icon_up">
                     </td>
                     <td>2468</td>
                     <td>AirFrance</td>
@@ -64,7 +64,7 @@
                 <tr>
 
                     <td>
-                        <img src="http://www.iconsearch.ru/uploads/icons/realistik-new/16x16/up.png">
+                        <img src="http://www.iconsearch.ru/uploads/icons/realistik-new/16x16/up.png" alt="icon_up">
                     </td>
                     <td>7985</td>
                     <td>AirBaltic</td>
@@ -96,7 +96,7 @@
                 <tr>
 
                     <td>
-                        <img src="http://www.iconsearch.ru/uploads/icons/realistik-new/16x16/up.png">
+                        <img src="http://www.iconsearch.ru/uploads/icons/realistik-new/16x16/up.png" alt="icon_up">
                     </td>
                     <td>1832</td>
                     <td>KLM</td>
@@ -160,7 +160,7 @@
                 <tr>
 
                     <td>
-                        <img src="http://www.iconsearch.ru/uploads/icons/realistik-new/16x16/up.png">
+                        <img src="http://www.iconsearch.ru/uploads/icons/realistik-new/16x16/up.png" alt="icon_up">
                     </td>
                     <td>3299</td>
                     <td>Аэрофлот</td>
@@ -191,7 +191,7 @@
                 <tr>
 
                     <td>
-                        <img src="http://www.iconsearch.ru/uploads/icons/realistik-new/16x16/up.png">
+                        <img src="http://www.iconsearch.ru/uploads/icons/realistik-new/16x16/up.png" alt="icon_up">
                     </td>
                     <td>3256</td>
                     <td>Аэрофлот</td>
@@ -222,7 +222,7 @@
                 <tr>
 
                     <td>
-                        <img src="http://www.iconsearch.ru/uploads/icons/realistik-new/16x16/up.png">
+                        <img src="http://www.iconsearch.ru/uploads/icons/realistik-new/16x16/up.png" alt="icon_up">
                     </td>
                     <td>026</td>
                     <td>AirFrance</td>
@@ -238,7 +238,7 @@
                 <tr>
 
                     <td>
-                        <img src="http://www.iconsearch.ru/uploads/icons/realistik-new/16x16/up.png">
+                        <img src="http://www.iconsearch.ru/uploads/icons/realistik-new/16x16/up.png" alt="icon_up">
                     </td>
                     <td>4895</td>
                     <td>AirBaltic</td>
@@ -269,5 +269,17 @@
                 </tr>
             </tbody>
         </table>
+        <form>
+            <fieldset>
+                <p>
+                    Если вы хотите получить рассылку о наших рейсах, введите ваши контактные данные.
+                </p>
+                <label for="email">Введите ваш email</label>
+                <input id="email" type="email" required>
+                <label for="phone"> Введите ваш телефон</label>
+                <input id="phone" type="tel" pattern="^\d{11}$" required>
+                <button>Отправить</button>
+            </fieldset>
+        </form>
     </body>
 </html>
