@@ -1,9 +1,3 @@
-/*tr:nth-child(2n){
-    background: #DCDCDC;
-    /*z-index: 0;
-    /*border-collapse: collapse;
-}*/
-
 tr:hover {
     background: #76EEC6;
 }
