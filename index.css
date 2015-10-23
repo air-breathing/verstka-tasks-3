@@ -1,26 +1,54 @@
-tbody > tr:nth-child(2n + 1){
+/*tr:nth-child(2n){
     background: #DCDCDC;
-    z-index: -1;
-    border-collapse: collapse;
-}
+    /*z-index: 0;
+    /*border-collapse: collapse;
+}*/
 
-tbody > tr:hover{
+tr:hover {
     background: #76EEC6;
 }
 
-td:hover
-{
+th, td, td:hover::after{
+    width: 120px;
+}
+
+table{
+    background-color: rgba(255,255,255,0.3);
     position: relative;
 }
 
 td:hover::after
 {
-    content: "";
+    content: '';
+    display: block;
     position: absolute;
-    left: 0;
-    top: -2000px;
-    height: 5000px;
-    width: 100%;
-    background-color: #76EEC6;
-    z-index:-1;
+    top: 0;
+    bottom: 0;
+    background: #76EEC6;
+    z-index: -1;
+}
+
+input:focus:required:invalid
+{
+    background: pink;
+}
+
+input:invalid ~ button
+{
+    display: none;
+}
+
+input[type='email']:valid ~ button + input[type='tel']:valid ~ button
+{
+    display: block;
+}
+
+tr:nth-child(2n)
+{
+    background-color: rgba(120, 120, 120, 0.7);
+}
+
+tr:nth-child(2n):hover
+{
+    background: #76EEC6;
 }
