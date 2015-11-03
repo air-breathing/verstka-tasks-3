@@ -9,7 +9,7 @@ caption
     z-index: 1;
 }
 
-tr:hover {
+tbody > tr:hover {
     background: #76EEC6;
 }
 
