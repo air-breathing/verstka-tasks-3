@@ -304,7 +304,8 @@ _small.jpg" alt="Финнэйр">
                 </p>
                 <label for="email">Введите ваш email</label>
                 <input id="email" type="email"
-                    required pattern="^[A-Za-z][A-Za-z-_.]*@[A-Za-z][A-Za-z-_.]*.[A-Za-z]+">
+                    required pattern="^[A-Za-z][A-Za-z0-9-_.]*@[A-Za-z][A-Za-z0-9-_]*(\.[A-Za-z][A-Za-z0-9-_]
+*){1,5}$">
                 <label for="phone">Введите ваш телефон</label>
                 <input id="phone" type="tel" pattern="^\d{11}$" required placeholder="например: 89001001010">
                 <input type="submit">
